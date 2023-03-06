@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.0",
         "silverstripe/cms": "^4",
-        "silverstripe/framework": "^4.1`1",
+        "silverstripe/framework": "^4.11",
         "silverstripe/admin": "^1",
         "silverstripe/versioned": "^1",
         "symfony/yaml": "^3 || ^4"
@@ -28,8 +28,8 @@
     },
     "autoload": {
         "psr-4": {
-            "DNADesign\\Workflow\\": "src/",
-            "DNADesign\\Workflow\\Tests\\": "tests/"
+            "Symbiote\\AdvancedWorkflow\\": "src/",
+            "Symbiote\\AdvancedWorkflow\\Tests\\": "tests/"
         }
     },
     "replace": {
