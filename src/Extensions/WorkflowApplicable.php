@@ -38,10 +38,6 @@ class WorkflowApplicable extends DataExtension
         'WorkflowDefinition' => WorkflowDefinition::class,
     ];
 
-    private static $many_many = [
-        'AdditionalWorkflowDefinitions' => WorkflowDefinition::class
-    ];
-
     private static $dependencies = [
         'workflowService' => '%$' . WorkflowService::class,
     ];
@@ -131,18 +127,6 @@ class WorkflowApplicable extends DataExtension
             $definition->setSource($definitions);
             $definition->setEmptyString(_t('WorkflowApplicable.INHERIT', 'Inherit from parent'));
             $tab->push($definition);
-
-            // Allow an optional selection of additional workflow definitions.
-
-            if ($this->owner->WorkflowDefinitionID) {
-                $fields->removeByName('AdditionalWorkflowDefinitions');
-                unset($definitions[$this->owner->WorkflowDefinitionID]);
-                $tab->push($additional = ListboxField::create(
-                    'AdditionalWorkflowDefinitions',
-                    _t('WorkflowApplicable.ADDITIONAL_WORKFLOW_DEFINITIONS', 'Additional Workflows')
-                ));
-                $additional->setSource($definitions);
-            }
         }
 
         // Display the effective workflow definition.
