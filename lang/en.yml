@@ -69,25 +69,25 @@ en:
     PROPERTYTITLE: 'Property to set; if this exists as a setter method, will be called passing the value'
   SiteTree:
     WorkflowOptions: 'Workflow options'
-  Symbiote\AdvancedWorkflow\Actions\AssignUsersToWorkflowAction:
+  DNADesign\Workflow\Actions\AssignUsersToWorkflowAction:
     PLURALNAME: 'Assign Users To Workflow Actions'
     PLURALS:
       one: 'An Assign Users To Workflow Action'
       other: '{count} Assign Users To Workflow Actions'
     SINGULARNAME: 'Assign Users To Workflow Action'
-  Symbiote\AdvancedWorkflow\Actions\CancelWorkflowAction:
+  DNADesign\Workflow\Actions\CancelWorkflowAction:
     PLURALNAME: 'Cancel Workflow Actions'
     PLURALS:
       one: 'A Cancel Workflow Action'
       other: '{count} Cancel Workflow Actions'
     SINGULARNAME: 'Cancel Workflow Action'
-  Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction:
+  DNADesign\Workflow\Actions\NotifyUsersWorkflowAction:
     PLURALNAME: 'Notify Users Workflow Actions'
     PLURALS:
       one: 'A Notify Users Workflow Action'
       other: '{count} Notify Users Workflow Actions'
     SINGULARNAME: 'Notify Users Workflow Action'
-  Symbiote\AdvancedWorkflow\Actions\PublishItemWorkflowAction:
+  DNADesign\Workflow\Actions\PublishItemWorkflowAction:
     ALLOWEMBARGOEDEDITING: 'Allow editing while item is embargoed? (does not apply without embargo)'
     PLURALNAME: 'Publish Item Workflow Actions'
     PLURALS:
@@ -95,64 +95,64 @@ en:
       other: '{count} Publish Item Workflow Actions'
     PublicationDelayDescription: 'Delay publiation by the specified number of days'
     SINGULARNAME: 'Publish Item Workflow Action'
-  Symbiote\AdvancedWorkflow\Actions\SetPropertyWorkflowAction:
+  DNADesign\Workflow\Actions\SetPropertyWorkflowAction:
     PLURALNAME: 'Set Property Workflow Actions'
     PLURALS:
       one: 'A Set Property Workflow Action'
       other: '{count} Set Property Workflow Actions'
     SINGULARNAME: 'Set Property Workflow Action'
-  Symbiote\AdvancedWorkflow\Actions\SimpleApprovalWorkflowAction:
+  DNADesign\Workflow\Actions\SimpleApprovalWorkflowAction:
     PLURALNAME: 'Simple Approval Workflow Actions'
     PLURALS:
       one: 'A Simple Approval Workflow Action'
       other: '{count} Simple Approval Workflow Actions'
     SINGULARNAME: 'Simple Approval Workflow Action'
-  Symbiote\AdvancedWorkflow\Actions\UnpublishItemWorkflowAction:
+  DNADesign\Workflow\Actions\UnpublishItemWorkflowAction:
     PLURALNAME: 'Unpublish Item Workflow Actions'
     PLURALS:
       one: 'An Unpublish Item Workflow Action'
       other: '{count} Unpublish Item Workflow Actions'
     SINGULARNAME: 'Unpublish Item Workflow Action'
-  Symbiote\AdvancedWorkflow\Admin\AdvancedWorkflowAdmin:
+  DNADesign\Workflow\Admin\AdvancedWorkflowAdmin:
     MENUTITLE: Workflows
-  Symbiote\AdvancedWorkflow\DataObjects\ImportedWorkflowTemplate:
+  DNADesign\Workflow\DataObjects\ImportedWorkflowTemplate:
     PLURALNAME: 'Imported Workflow Templates'
     PLURALS:
       one: 'An Imported Workflow Template'
       other: '{count} Imported Workflow Templates'
     SINGULARNAME: 'Imported Workflow Template'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction:
+  DNADesign\Workflow\DataObjects\WorkflowAction:
     PLURALNAME: 'Workflow Actions'
     PLURALS:
       one: 'A Workflow Action'
       other: '{count} Workflow Actions'
     SINGULARNAME: 'Workflow Action'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowActionInstance:
+  DNADesign\Workflow\DataObjects\WorkflowActionInstance:
     PLURALNAME: 'Workflow Action Instances'
     PLURALS:
       one: 'A Workflow Action Instance'
       other: '{count} Workflow Action Instances'
     SINGULARNAME: 'Workflow Action Instance'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition:
+  DNADesign\Workflow\DataObjects\WorkflowDefinition:
     PLURALNAME: 'Workflow Definitions'
     PLURALS:
       one: 'A Workflow Definition'
       other: '{count} Workflow Definitions'
     ReminderEmailDescription: 'Send reminder email after the specified number of days without action.'
     SINGULARNAME: 'Workflow Definition'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance:
+  DNADesign\Workflow\DataObjects\WorkflowInstance:
     PLURALNAME: 'Workflow Instances'
     PLURALS:
       one: 'A Workflow Instance'
       other: '{count} Workflow Instances'
     SINGULARNAME: 'Workflow Instance'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition:
+  DNADesign\Workflow\DataObjects\WorkflowTransition:
     PLURALNAME: 'Workflow Transitions'
     PLURALS:
       one: 'A Workflow Transition'
       other: '{count} Workflow Transitions'
     SINGULARNAME: 'Workflow Transition'
-  Symbiote\AdvancedWorkflow\Forms\GridField\GridFieldExportAction:
+  DNADesign\Workflow\Forms\GridField\GridFieldExportAction:
     Export: Export
   UnpublishItemWorkflowAction:
     DELAYUNPUBDAYSAFTER: ' days'

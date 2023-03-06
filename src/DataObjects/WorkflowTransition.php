@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\DataObjects;
+namespace DNADesign\Workflow\DataObjects;
 
 use SilverStripe\Forms\CheckboxSetField;
 use SilverStripe\Forms\DropdownField;
@@ -15,7 +15,7 @@ use SilverStripe\Security\Group;
 use SilverStripe\Security\Member;
 use SilverStripe\Security\Permission;
 use SilverStripe\Security\Security;
-use Symbiote\AdvancedWorkflow\Forms\AWRequiredFields;
+use DNADesign\Workflow\Forms\AWRequiredFields;
 
 /**
  * A workflow transition.
@@ -26,12 +26,6 @@ use Symbiote\AdvancedWorkflow\Forms\AWRequiredFields;
  *
  * Therefore, any logic around whether the workflow can proceed should be
  * managed within this method.
- *
- * @method WorkflowAction Action()
- * @method WorkflowAction NextAction()
- * @author  marcus@symbiote.com.au
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class WorkflowTransition extends DataObject
 {
@@ -53,7 +47,7 @@ class WorkflowTransition extends DataObject
         'Groups' => Group::class,
     );
 
-    private static $icon = 'symbiote/silverstripe-advancedworkflow:images/transition.png';
+    private static $icon = 'dnadesign/silverstripe-workflow:images/transition.png';
 
     private static $table_name = 'WorkflowTransition';
 

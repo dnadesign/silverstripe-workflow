@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Extensions;
+namespace DNADesign\Workflow\Extensions;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\Director;
@@ -21,10 +21,10 @@ use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\DataList;
 use SilverStripe\Security\Permission;
 use SilverStripe\Security\Security;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowActionInstance;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\DataObjects\WorkflowActionInstance;
+use DNADesign\Workflow\DataObjects\WorkflowDefinition;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\Services\WorkflowService;
 use Symbiote\QueuedJobs\Services\AbstractQueuedJob;
 
 /**

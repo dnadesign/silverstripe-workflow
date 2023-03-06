@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Actions;
+namespace DNADesign\Workflow\Actions;
 
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\CheckboxSetField;
@@ -10,16 +10,12 @@ use SilverStripe\ORM\ArrayList;
 use SilverStripe\ORM\DB;
 use SilverStripe\Security\Group;
 use SilverStripe\Security\Member;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
 
 /**
  * A workflow action that allows additional users or groups to be assigned to
  * the workflow part-way through the workflow path.
- *
- * @license    BSD License (http://silverstripe.org/bsd-license/)
- * @package    advancedworkflow
- * @subpackage actions
  */
 class AssignUsersToWorkflowAction extends WorkflowAction
 {
@@ -32,7 +28,7 @@ class AssignUsersToWorkflowAction extends WorkflowAction
         'Groups' => Group::class,
     );
 
-    private static $icon = 'symbiote/silverstripe-advancedworkflow:images/assign.png';
+    private static $icon = 'dnadesign/silverstripe-workflow:images/assign.png';
 
     private static $table_name = 'AssignUsersToWorkflowAction';
 

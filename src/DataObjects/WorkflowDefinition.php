@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\DataObjects;
+namespace DNADesign\Workflow\DataObjects;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Forms\CheckboxSetField;
@@ -30,8 +30,8 @@ use SilverStripe\Security\Group;
 use SilverStripe\Security\Member;
 use SilverStripe\Security\Permission;
 use SilverStripe\Security\Security;
-use Symbiote\AdvancedWorkflow\FormFields\WorkflowField;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\FormFields\WorkflowField;
+use DNADesign\Workflow\Services\WorkflowService;
 use Symbiote\QueuedJobs\Services\AbstractQueuedJob;
 
 /**
@@ -45,10 +45,6 @@ use Symbiote\QueuedJobs\Services\AbstractQueuedJob;
  * a document. An automatic step might be to email a group of people, or to publish documents.
  * Basically, a manual step requires the interaction of someone to pick which action to take, an automatic
  * step will automatically determine what to do once it has finished.
- *
- * @author  marcus@symbiote.com.au
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class WorkflowDefinition extends DataObject
 {
@@ -82,7 +78,7 @@ class WorkflowDefinition extends DataObject
         'Groups' => Group::class,
     ];
 
-    private static $icon = 'symbiote/silverstripe-advancedworkflow:images/definition.png';
+    private static $icon = 'dnadesign/silverstripe-workflow:images/definition.png';
 
     public static $default_workflow_title_base = 'My Workflow';
 

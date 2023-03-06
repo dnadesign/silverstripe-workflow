@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\DataObjects;
+namespace DNADesign\Workflow\DataObjects;
 
 use Exception;
 use SilverStripe\Control\Controller;
@@ -26,10 +26,10 @@ use SilverStripe\Security\Permission;
 use SilverStripe\Security\Security;
 use SilverStripe\Versioned\DataDifferencer;
 use SilverStripe\Versioned\Versioned;
-use Symbiote\AdvancedWorkflow\Actions\AssignUsersToWorkflowAction;
-use Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable;
-use Symbiote\AdvancedWorkflow\Extensions\FileWorkflowApplicable;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\Actions\AssignUsersToWorkflowAction;
+use DNADesign\Workflow\Extensions\WorkflowApplicable;
+use DNADesign\Workflow\Extensions\FileWorkflowApplicable;
+use DNADesign\Workflow\Services\WorkflowService;
 
 /**
  * A WorkflowInstance is created whenever a user 'starts' a workflow.
@@ -37,14 +37,6 @@ use Symbiote\AdvancedWorkflow\Services\WorkflowService;
  * This 'start' is triggered automatically when the user clicks the relevant
  * button (eg 'apply for approval'). This creates a standalone object
  * that maintains the state of the workflow process.
- *
- * @method WorkflowDefinition Definition()
- * @method WorkflowActionInstance CurrentAction()
- * @method Member Initiator()
- *
- * @author  marcus@symbiote.com.au
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class WorkflowInstance extends DataObject
 {

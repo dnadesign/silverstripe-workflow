@@ -1,21 +1,17 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Controllers;
+namespace DNADesign\Workflow\Controllers;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\Director;
-use SilverStripe\Core\Convert;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Security;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\DataObjects\WorkflowTransition;
+use DNADesign\Workflow\Services\WorkflowService;
 
 /**
  * Handles actions triggered from external sources, eg emails or web frontend
- *
- * @author marcus@symbiote.com.au
- * @license BSD License http://silverstripe.org/bsd-license/
  */
 class AdvancedWorkflowActionController extends Controller
 {

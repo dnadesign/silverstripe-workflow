@@ -4,6 +4,6 @@ Only:
   moduleexists: symbiote/silverstripe-queuedjobs
 ---
 SilverStripe\Core\Injector\Injector:
-  Symbiote\AdvancedWorkflow\Jobs\WorkflowReminderJob:
+  DNADesign\Workflow\Jobs\WorkflowReminderJob:
     properties:
       queuedJobService: '%$Symbiote\QueuedJobs\Services\QueuedJobService'

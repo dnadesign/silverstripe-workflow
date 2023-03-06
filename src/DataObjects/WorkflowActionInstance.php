@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\DataObjects;
+namespace DNADesign\Workflow\DataObjects;
 
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Forms\Form;
@@ -18,9 +18,6 @@ use SilverStripe\Security\Member;
  * Each step of the workflow has one of these created for it - it refers back
  * to the original action definition, but is unique for each step of the
  * workflow to ensure re-entrant behaviour.
- *
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class WorkflowActionInstance extends DataObject
 {

@@ -2,19 +2,19 @@
 Name: workflowconfig
 ---
 SilverStripe\Core\Injector\Injector:
-  Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable:
-    class: Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable
+  DNADesign\Workflow\Extensions\WorkflowApplicable:
+    class: DNADesign\Workflow\Extensions\WorkflowApplicable
     type: prototype
 
 SilverStripe\CMS\Model\SiteTree:
   extensions:
-    - Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable
+    - DNADesign\Workflow\Extensions\WorkflowApplicable
 SilverStripe\CMS\Controllers\CMSPageEditController:
   extensions:
-    - Symbiote\AdvancedWorkflow\Extensions\AdvancedWorkflowExtension
+    - DNADesign\Workflow\Extensions\AdvancedWorkflowExtension
 SilverStripe\Forms\GridField\GridFieldDetailForm_ItemRequest:
   extensions:
-    - Symbiote\AdvancedWorkflow\Extensions\AdvancedWorkflowExtension
+    - DNADesign\Workflow\Extensions\AdvancedWorkflowExtension
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
-    - symbiote/silverstripe-advancedworkflow:client/dist/styles/advancedworkflow.css
+    - dnadesign/silverstripe-workflow:client/dist/styles/advancedworkflow.css

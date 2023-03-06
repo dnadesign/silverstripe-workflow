@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Extensions;
+namespace DNADesign\Workflow\Extensions;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\HTTPRequest;
@@ -11,8 +11,8 @@ use SilverStripe\Forms\GridField\GridFieldDetailForm_ItemRequest;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Permission;
 use SilverStripe\View\Requirements;
-use Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\Extensions\WorkflowApplicable;
+use DNADesign\Workflow\Services\WorkflowService;
 
 /**
  * Handles interactions triggered by users in the backend of the CMS. Replicate this
@@ -61,7 +61,7 @@ class AdvancedWorkflowExtension extends Extension
      */
     public function updateEditForm(Form $form)
     {
-        Requirements::javascript('symbiote/silverstripe-advancedworkflow:client/dist/js/advancedworkflow.js');
+        Requirements::javascript('dnadesign/silverstripe-workflow:client/dist/js/advancedworkflow.js');
         /** @var WorkflowService $service */
         $service = singleton(WorkflowService::class);
         /** @var DataObject|WorkflowApplicable $record */

@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Admin;
+namespace DNADesign\Workflow\Admin;
 
 use Exception;
 use SilverStripe\Admin\LeftAndMain;
@@ -14,7 +14,7 @@ use SilverStripe\Security\Permission;
 use SilverStripe\Security\Security;
 use SilverStripe\View\ArrayData;
 use SilverStripe\View\SSViewer;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
+use DNADesign\Workflow\DataObjects\WorkflowDefinition;
 
 /**
  * Allows workflow definitions to be exported from one SilverStripe install, ready for import into another.
@@ -24,10 +24,6 @@ use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
  *
  * @todo
  *  - If workflow-def is created badly, the "update template definition" logic, sometimes doesn't work
- *
- * @author  russell@silverstripe.com
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class WorkflowDefinitionExporter
 {

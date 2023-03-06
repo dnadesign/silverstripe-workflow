@@ -1,16 +1,12 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\DataObjects;
+namespace DNADesign\Workflow\DataObjects;
 
 use SilverStripe\ORM\DataObject;
 
 /**
  * This DataObject replaces the SilverStripe cache as the repository for
  * imported WorkflowDefinitions.
- *
- * @author  russell@silverstripe.com
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class ImportedWorkflowTemplate extends DataObject
 {

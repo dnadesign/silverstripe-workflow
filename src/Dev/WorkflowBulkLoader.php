@@ -1,24 +1,21 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Dev;
+namespace DNADesign\Workflow\Dev;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Dev\BulkLoader;
 use SilverStripe\Dev\BulkLoader_Result;
 use SilverStripe\ORM\ValidationException;
-use Symbiote\AdvancedWorkflow\Admin\WorkflowDefinitionExporter;
-use Symbiote\AdvancedWorkflow\Admin\WorkflowDefinitionImporter;
-use Symbiote\AdvancedWorkflow\DataObjects\ImportedWorkflowTemplate;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
-use Symbiote\AdvancedWorkflow\Templates\WorkflowTemplate;
+use DNADesign\Workflow\Admin\WorkflowDefinitionExporter;
+use DNADesign\Workflow\Admin\WorkflowDefinitionImporter;
+use DNADesign\Workflow\DataObjects\ImportedWorkflowTemplate;
+use DNADesign\Workflow\DataObjects\WorkflowDefinition;
+use DNADesign\Workflow\Services\WorkflowService;
+use DNADesign\Workflow\Templates\WorkflowTemplate;
 
 /**
  * Utility class to facilitate a simple YML-import via the standard CMS ImportForm() logic.
- *
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class WorkflowBulkLoader extends BulkLoader
 {

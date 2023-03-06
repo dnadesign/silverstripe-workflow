@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Templates;
+namespace DNADesign\Workflow\Templates;
 
 use ArrayObject;
 use Exception;
@@ -8,8 +8,8 @@ use SilverStripe\Core\Convert;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Group;
 use SilverStripe\Security\Member;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition;
+use DNADesign\Workflow\DataObjects\WorkflowDefinition;
+use DNADesign\Workflow\DataObjects\WorkflowTransition;
 
 /**
  * A class that wraps around an array description of a workflow
@@ -31,7 +31,7 @@ use Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition;
  *
  * SilverStripe\Core\Injector\Injector:
  *   SimpleReviewApprove:
- *     class: Symbiote\AdvancedWorkflow\Templates\WorkflowTemplate
+ *     class: DNADesign\Workflow\Templates\WorkflowTemplate
  *     constructor:
  *       - Review and Approve
  *       - Description of the workflow template
@@ -55,7 +55,7 @@ use Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition;
  *           type: PublishItemWorkflowAction
  *         Reject:
  *           type: CancelWorkflowAction
- *   Symbiote\AdvancedWorkflow\Services\WorkflowService:
+ *   DNADesign\Workflow\Services\WorkflowService:
  *     properties:
  *       templates:
  *         - %$SimpleReviewApprove

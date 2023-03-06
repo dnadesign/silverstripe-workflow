@@ -1,12 +1,12 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Jobs;
+namespace DNADesign\Workflow\Jobs;
 
 use Exception;
 use Psr\Log\LoggerInterface;
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Control\Email\Email;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
 use Symbiote\QueuedJobs\Services\AbstractQueuedJob;
 use Symbiote\QueuedJobs\Services\QueuedJobService;
 
@@ -14,10 +14,6 @@ if (!class_exists(AbstractQueuedJob::class)) {
     return;
 }
 
-/**
- * @author <marcus@symbiote.com.au>
- * @license BSD License http://www.silverstripe.org/bsd-license
- */
 class WorkflowReminderJob extends AbstractQueuedJob
 {
     const DEFAULT_REPEAT = 600;
@@ -86,13 +82,13 @@ class WorkflowReminderJob extends AbstractQueuedJob
                 'Instance' => $instance,
                 'Link'     => $target instanceof SiteTree ? "admin/show/$target->ID" : ''
             ));
-            
+
             try {
                 $email->send();
             } catch (Exception $ex) {
                 Injector::inst()->get(LoggerInterface::class)->warning($ex->getMessage());
             }
-            
+
             $sent++;
 
             // add a comment to the workflow if possible

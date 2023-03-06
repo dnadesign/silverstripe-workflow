@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Services;
+namespace DNADesign\Workflow\Services;
 
 use Exception;
 

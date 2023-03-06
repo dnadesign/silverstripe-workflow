@@ -69,25 +69,25 @@ eo:
     PROPERTYTITLE: 'Agordota atributo; se ĝi ekzistas kiel agordmetodo, ĝi vokiĝos kun la valoron'
   SiteTree:
     WorkflowOptions: 'Laborfluaj agordoj'
-  Symbiote\AdvancedWorkflow\Actions\AssignUsersToWorkflowAction:
+  DNADesign\Workflow\Actions\AssignUsersToWorkflowAction:
     PLURALNAME: 'Asigni uzantojn al laborfluaj agoj'
     PLURALS:
       one: 'Unu asigno uzantojn al laborflua ago'
       other: '{count} asignoj uzantojn al laborfluaj agoj'
     SINGULARNAME: 'Asigni uzantojn al laborflua ago'
-  Symbiote\AdvancedWorkflow\Actions\CancelWorkflowAction:
+  DNADesign\Workflow\Actions\CancelWorkflowAction:
     PLURALNAME: 'Nuligi laborfluajn agojn'
     PLURALS:
       one: 'Unu nuligo laborfluan agon'
       other: '{count} nuligoj laborfluajn agojn'
     SINGULARNAME: 'Nuligi laborfluan agon'
-  Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction:
+  DNADesign\Workflow\Actions\NotifyUsersWorkflowAction:
     PLURALNAME: 'Sciigi uzulajn laborfluajn agojn'
     PLURALS:
       one: 'Unu sciigo uzulan laborfluan agon'
       other: '{count} sciigoj uzulajn laborfluajn agojn'
     SINGULARNAME: 'Sciigi uzulan laborfluan agon'
-  Symbiote\AdvancedWorkflow\Actions\PublishItemWorkflowAction:
+  DNADesign\Workflow\Actions\PublishItemWorkflowAction:
     ALLOWEMBARGOEDEDITING: 'Ĉu ebligi redaktadon dum ero estas embargita? (ne validas sen embargo)'
     PLURALNAME: 'Publikigi elementajn laborfluajn agojn'
     PLURALS:
@@ -95,64 +95,64 @@ eo:
       other: '{count} publikigoj elementajn laborfluajn agojn'
     PublicationDelayDescription: 'Prokrasti publikigon laŭ la agordita nombro da tagoj'
     SINGULARNAME: 'Publikigi elementan laborfluan agon'
-  Symbiote\AdvancedWorkflow\Actions\SetPropertyWorkflowAction:
+  DNADesign\Workflow\Actions\SetPropertyWorkflowAction:
     PLURALNAME: 'Agordi laborfluajn agojn'
     PLURALS:
       one: 'Unu agordo laborfluan agon'
       other: '{count} agordoj laborfluajn agojn'
     SINGULARNAME: 'Agordi laborfluan agon'
-  Symbiote\AdvancedWorkflow\Actions\SimpleApprovalWorkflowAction:
+  DNADesign\Workflow\Actions\SimpleApprovalWorkflowAction:
     PLURALNAME: 'Simple aprobi laborfluajn agojn'
     PLURALS:
       one: 'Unu simpla aprobo laborfluajn agojn'
       other: '{count} simplaj aproboj laborfluajn agojn'
     SINGULARNAME: 'Simple aprobi laborfluan agon'
-  Symbiote\AdvancedWorkflow\Actions\UnpublishItemWorkflowAction:
+  DNADesign\Workflow\Actions\UnpublishItemWorkflowAction:
     PLURALNAME: 'Malpublikigi elementajn laborfluajn agojn'
     PLURALS:
       one: 'Unu malpublikigo elementan laborfluan agon'
       other: '{count} malpublikigoj elementajn laborfluajn agojn'
     SINGULARNAME: 'Malpublikigi elementan laborfluan agon'
-  Symbiote\AdvancedWorkflow\Admin\AdvancedWorkflowAdmin:
+  DNADesign\Workflow\Admin\AdvancedWorkflowAdmin:
     MENUTITLE: Laborfluoj
-  Symbiote\AdvancedWorkflow\DataObjects\ImportedWorkflowTemplate:
+  DNADesign\Workflow\DataObjects\ImportedWorkflowTemplate:
     PLURALNAME: 'Importitaj laborfluaj ŝablonoj'
     PLURALS:
       one: 'Unu importita laborflua ŝablono'
       other: '{count} importitaj laborfluaj ŝablonoj'
     SINGULARNAME: 'Importita laborflua ŝablono'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction:
+  DNADesign\Workflow\DataObjects\WorkflowAction:
     PLURALNAME: 'Laborfluaj agoj'
     PLURALS:
       one: 'Unu laborflua ago'
       other: '{count} laborfluaj agoj'
     SINGULARNAME: 'Laborflua ago'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowActionInstance:
+  DNADesign\Workflow\DataObjects\WorkflowActionInstance:
     PLURALNAME: 'Ekzemploj de laborfluaj agoj '
     PLURALS:
       one: 'Unu ekzemplo de laborflua ago'
       other: '{count} ekzemploj de laborfluaj agoj '
     SINGULARNAME: 'Ekzemplo de laborflua ago'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition:
+  DNADesign\Workflow\DataObjects\WorkflowDefinition:
     PLURALNAME: 'Laborfluaj difinoj'
     PLURALS:
       one: 'Unu laborflua ago'
       other: '{count} laborfluaj agoj'
     ReminderEmailDescription: 'Sendi retpoŝtan memorigon post la agordita nombro da tagoj sen ago'
     SINGULARNAME: 'Laborflua difino'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance:
+  DNADesign\Workflow\DataObjects\WorkflowInstance:
     PLURALNAME: 'Laborfluaj ekzemploj'
     PLURALS:
       one: 'Unu ekzemplo de laborfluo'
       other: '{count} ekzemploj de laborfluoj'
     SINGULARNAME: 'Laborflua ekzemplo'
-  Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition:
+  DNADesign\Workflow\DataObjects\WorkflowTransition:
     PLURALNAME: 'Laborfluaj transiroj'
     PLURALS:
       one: 'Unu laborflua transiro'
       other: '{count} laborfluaj transiroj'
     SINGULARNAME: 'Laborflua transiro'
-  Symbiote\AdvancedWorkflow\Forms\GridField\GridFieldExportAction:
+  DNADesign\Workflow\Forms\GridField\GridFieldExportAction:
     Export: Eksporti
   UnpublishItemWorkflowAction:
     DELAYUNPUBDAYSAFTER: tagoj

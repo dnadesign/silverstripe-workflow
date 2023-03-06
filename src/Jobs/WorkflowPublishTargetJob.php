@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Jobs;
+namespace DNADesign\Workflow\Jobs;
 
 use Symbiote\QueuedJobs\Services\AbstractQueuedJob;
 use SilverStripe\Core\Extensible;

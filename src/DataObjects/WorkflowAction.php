@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\DataObjects;
+namespace DNADesign\Workflow\DataObjects;
 
 use SilverStripe\Core\Manifest\ModuleResourceLoader;
 use SilverStripe\Forms\CheckboxField;
@@ -20,11 +20,6 @@ use SilverStripe\Security\Security;
  * A workflow action describes a the 'state' a workflow can be in, and
  * the action(s) that occur while in that state. An action can then have
  * subsequent transitions out of the current state.
- *
- * @method WorkflowDefinition WorkflowDef()
- * @author  marcus@symbiote.com.au
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class WorkflowAction extends DataObject
 {
@@ -61,7 +56,7 @@ class WorkflowAction extends DataObject
      */
     private static $instance_class = WorkflowActionInstance::class;
 
-    private static $icon = 'symbiote/silverstripe-advancedworkflow:images/action.png';
+    private static $icon = 'dnadesign/silverstripe-workflow:images/action.png';
 
     private static $table_name = 'WorkflowAction';
 

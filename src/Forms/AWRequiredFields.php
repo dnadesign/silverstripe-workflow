@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Forms;
+namespace DNADesign\Workflow\Forms;
 
 use SilverStripe\Forms\RequiredFields;
 

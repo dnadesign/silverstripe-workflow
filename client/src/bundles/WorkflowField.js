@@ -75,7 +75,7 @@ jQuery.entwine('workflow', ($) => {
 
           const data = {
             'id[]': ids.get(),
-            class: 'Symbiote\\AdvancedWorkflow\\DataObjects\\WorkflowAction',
+            class: 'DNADesign\\Workflow\\DataObjects\\WorkflowAction',
             SecurityID: field.data('securityid'),
           };
 
@@ -101,7 +101,7 @@ jQuery.entwine('workflow', ($) => {
 
           const data = {
             'id[]': ids.get(),
-            class: 'Symbiote\\AdvancedWorkflow\\DataObjects\\WorkflowTransition',
+            class: 'DNADesign\\Workflow\\DataObjects\\WorkflowTransition',
             parent: $(this).closest('.workflow-field-action').data('id'),
             SecurityID: field.data('securityid'),
           };

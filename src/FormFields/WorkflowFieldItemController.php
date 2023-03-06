@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\FormFields;
+namespace DNADesign\Workflow\FormFields;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Forms\FormAction;

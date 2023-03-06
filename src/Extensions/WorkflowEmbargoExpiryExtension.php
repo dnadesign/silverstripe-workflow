@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Extensions;
+namespace DNADesign\Workflow\Extensions;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Core\Injector\Injector;
@@ -19,9 +19,9 @@ use SilverStripe\Security\Member;
 use SilverStripe\Security\Permission;
 use SilverStripe\View\Requirements;
 use SilverStripe\Versioned\Versioned;
-use Symbiote\AdvancedWorkflow\Forms\AWRequiredFields;
-use Symbiote\AdvancedWorkflow\Jobs\WorkflowPublishTargetJob;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\Forms\AWRequiredFields;
+use DNADesign\Workflow\Jobs\WorkflowPublishTargetJob;
+use DNADesign\Workflow\Services\WorkflowService;
 use Symbiote\QueuedJobs\DataObjects\QueuedJobDescriptor;
 use Symbiote\QueuedJobs\Services\QueuedJobService;
 
@@ -96,7 +96,7 @@ class WorkflowEmbargoExpiryExtension extends DataExtension
     {
         // requirements
         // ------------
-        $module = 'symbiote/silverstripe-advancedworkflow';
+        $module = 'dnadesign/silverstripe-workflow';
         Requirements::add_i18n_javascript($module . ':client/lang');
         Requirements::css($module . ':client/dist/styles/advancedworkflow.css');
         Requirements::javascript($module . ':client/dist/js/advancedworkflow.js');

@@ -1,20 +1,12 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Actions;
+namespace DNADesign\Workflow\Actions;
 
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
 
-/**
- * Description
- *
- * @author     marcus@symbiote.com.au
- * @license    BSD License (http://silverstripe.org/bsd-license/)
- * @package    advancedworkflow
- * @subpackage actions
- */
 class CancelWorkflowAction extends WorkflowAction
 {
-    private static $icon = 'symbiote/silverstripe-advancedworkflow:images/cancel.png';
+    private static $icon = 'dnadesign/silverstripe-workflow:images/cancel.png';
 
     private static $table_name = 'CancelWorkflowAction';
 }

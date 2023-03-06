@@ -1,28 +1,13 @@
 {
-  "name": "symbiote-advancedworkflow",
-  "version": "4.0.0",
-  "description": "Adds configurable workflow support to the CMS, with a GUI for creating custom workflow definitions.",
+  "name": "dnadesign-workflow",
+  "version": "1.0.0",
+  "description": "DNA Design modified version of the Symbiote\\AdvancedWorkflow Silverstripe module.",
   "scripts": {
     "build": "yarn && NODE_ENV=production webpack -p --bail --progress",
     "watch": "yarn && NODE_ENV=development webpack --watch --progress",
     "css": "WEBPACK_CHILD=css npm run build",
     "lint": "eslint client/src; sass-lint -v"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/symbiote/silverstripe-advancedworkflow.git"
-  },
-  "keywords": [
-    "silverstripe",
-    "cms",
-    "workflow"
-  ],
-  "author": "SilverStripe Ltd",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/symbiote/silverstripe-advancedworkflow/issues"
-  },
-  "homepage": "https://github.com/symbiote/silverstripe-advancedworkflow#readme",
   "dependencies": {
     "jquery": "^3.5.0"
   },

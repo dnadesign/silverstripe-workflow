@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\FormFields;
+namespace DNADesign\Workflow\FormFields;
 
 use ReflectionClass;
 use SilverStripe\Control\HTTPResponse;
@@ -11,11 +11,11 @@ use SilverStripe\ORM\ArrayList;
 use SilverStripe\Security\SecurityToken;
 use SilverStripe\View\ArrayData;
 use SilverStripe\View\Requirements;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition;
-use Symbiote\AdvancedWorkflow\FormFields\WorkflowField;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\DataObjects\WorkflowDefinition;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowTransition;
+use DNADesign\Workflow\FormFields\WorkflowField;
+use DNADesign\Workflow\Services\WorkflowService;
 
 /**
  * A form field that allows workflow actions and transitions to be edited,
@@ -101,8 +101,8 @@ class WorkflowField extends FormField
 
     public function FieldHolder($properties = array())
     {
-        Requirements::javascript('symbiote/silverstripe-advancedworkflow:client/dist/js/advancedworkflow.js');
-        Requirements::css('symbiote/silverstripe-advancedworkflow:client/dist/styles/advancedworkflow.css');
+        Requirements::javascript('dnadesign/silverstripe-workflow:client/dist/js/advancedworkflow.js');
+        Requirements::css('dnadesign/silverstripe-workflow:client/dist/styles/advancedworkflow.css');
 
         return $this->Field($properties);
     }

@@ -3,7 +3,7 @@ Name: exportedworkflow
 ---
 SilverStripe\\Core\\Injector\\Injector:
   ExportedWorkflow:
-    class: Symbiote\\AdvancedWorkflow\\Templates\\WorkflowTemplate
+    class: DNADesign\\Workflow\\Templates\\WorkflowTemplate
     constructor:
 	<% with ExportMetaData %>
       - '$ExportWorkflowDefName $ExportDate'
@@ -62,7 +62,7 @@ SilverStripe\\Core\\Injector\\Injector:
 		  <% end_if %>
 	  <% end_loop %>
 	  <% end_if %>
-  Symbiote\\AdvancedWorkflow\\Services\\WorkflowService:
+  DNADesign\\Workflow\\Services\\WorkflowService:
     properties:
       templates:
         - %\$ExportedWorkflow

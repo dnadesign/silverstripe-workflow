@@ -24,7 +24,7 @@ const config = [
   {
     name: 'js',
     entry: {
-      advancedworkflow: `${PATHS.SRC}/bundles/bundle.js`,
+      workflow: `${PATHS.SRC}/bundles/bundle.js`,
     },
     output: {
       path: PATHS.DIST,
@@ -39,7 +39,7 @@ const config = [
   {
     name: 'css',
     entry: {
-      advancedworkflow: `${PATHS.SRC}/styles/bundle.scss`,
+      workflow: `${PATHS.SRC}/styles/bundle.scss`,
     },
     output: {
       path: PATHS.DIST,

@@ -1,26 +1,21 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Actions;
+namespace DNADesign\Workflow\Actions;
 
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\FieldGroup;
 use SilverStripe\Forms\LabelField;
 use SilverStripe\Forms\NumericField;
 use SilverStripe\ORM\DataObject;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
-use Symbiote\AdvancedWorkflow\Extensions\WorkflowEmbargoExpiryExtension;
-use Symbiote\AdvancedWorkflow\Jobs\WorkflowPublishTargetJob;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\Extensions\WorkflowEmbargoExpiryExtension;
+use DNADesign\Workflow\Jobs\WorkflowPublishTargetJob;
 use Symbiote\QueuedJobs\Services\AbstractQueuedJob;
 use Symbiote\QueuedJobs\Services\QueuedJobService;
 
 /**
  * Publishes an item
- *
- * @author     marcus@symbiote.com.au
- * @license    BSD License (http://silverstripe.org/bsd-license/)
- * @package    advancedworkflow
- * @subpackage actions
  */
 class PublishItemWorkflowAction extends WorkflowAction
 {
@@ -33,7 +28,7 @@ class PublishItemWorkflowAction extends WorkflowAction
         'AllowEmbargoedEditing' => true
     );
 
-    private static $icon = 'symbiote/silverstripe-advancedworkflow:images/publish.png';
+    private static $icon = 'dnadesign/silverstripe-workflow:images/publish.png';
 
     private static $table_name = 'PublishItemWorkflowAction';
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Actions;
+namespace DNADesign\Workflow\Actions;
 
 use SilverStripe\Control\Email\Email;
 use SilverStripe\Forms\HeaderField;
@@ -16,15 +16,11 @@ use SilverStripe\Security\Security;
 use SilverStripe\View\ArrayData;
 use SilverStripe\View\SSViewer;
 use Swift_RfcComplianceException;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
 
 /**
  * A workflow action that notifies users attached to the workflow path that they have a task awaiting them.
- *
- * @license    BSD License (http://silverstripe.org/bsd-license/)
- * @package    advancedworkflow
- * @subpackage actions
  */
 class NotifyUsersWorkflowAction extends WorkflowAction
 {
@@ -40,7 +36,7 @@ class NotifyUsersWorkflowAction extends WorkflowAction
         'EmailTemplate' => 'Text'
     );
 
-    private static $icon = 'symbiote/silverstripe-advancedworkflow:images/notify.png';
+    private static $icon = 'dnadesign/silverstripe-workflow:images/notify.png';
 
     private static $table_name = 'NotifyUsersWorkflowAction';
 

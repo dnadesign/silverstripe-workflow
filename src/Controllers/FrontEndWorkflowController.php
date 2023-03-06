@@ -1,22 +1,18 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Controllers;
+namespace DNADesign\Workflow\Controllers;
 
 use Exception;
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Forms\Form;
 use SilverStripe\ORM\DataObject;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition;
-use Symbiote\AdvancedWorkflow\Forms\FrontendWorkflowForm;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\DataObjects\WorkflowTransition;
+use DNADesign\Workflow\Forms\FrontendWorkflowForm;
+use DNADesign\Workflow\Services\WorkflowService;
 
 /**
  * Provides a front end Form view of the defined Workflow Actions and Transitions
- *
- * @author  rodney@symbiote.com.au shea@symbiote.com.au
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 abstract class FrontEndWorkflowController extends Controller
 {

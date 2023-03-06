@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Admin;
+namespace DNADesign\Workflow\Admin;
 
 use SilverStripe\Admin\ModelAdmin;
 use SilverStripe\CMS\Controllers\CMSPageEditController;
@@ -22,14 +22,13 @@ use SilverStripe\Security\Member;
 use SilverStripe\Security\Permission;
 use SilverStripe\Security\Security;
 use SilverStripe\View\Requirements;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
-use Symbiote\AdvancedWorkflow\Dev\WorkflowBulkLoader;
-use Symbiote\AdvancedWorkflow\Forms\GridField\GridFieldExportAction;
-use Symbiote\AdvancedWorkflow\Forms\GridField\GridFieldWorkflowRestrictedEditButton;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use DNADesign\Workflow\DataObjects\WorkflowDefinition;
+use DNADesign\Workflow\Dev\WorkflowBulkLoader;
+use DNADesign\Workflow\Forms\GridField\GridFieldExportAction;
+use DNADesign\Workflow\Forms\GridField\GridFieldWorkflowRestrictedEditButton;
+use DNADesign\Workflow\Services\WorkflowService;
 
 /**
- * @package advancedworkflow
  * @todo UI/UX needs looking at for when current user has no pending and/or submitted items, (Current
  * implementation is bog-standard <p> text)
  */
@@ -88,9 +87,9 @@ class AdvancedWorkflowAdmin extends ModelAdmin
     {
         parent::init();
 
-        Requirements::add_i18n_javascript('symbiote/silverstripe-advancedworkflow:client/lang');
-        Requirements::javascript('symbiote/silverstripe-advancedworkflow:client/dist/js/advancedworkflow.js');
-        Requirements::css('symbiote/silverstripe-advancedworkflow:client/dist/styles/advancedworkflow.css');
+        Requirements::add_i18n_javascript('dnadesign/silverstripe-workflow:client/lang');
+        Requirements::javascript('dnadesign/silverstripe-workflow:client/dist/js/advancedworkflow.js');
+        Requirements::css('dnadesign/silverstripe-workflow:client/dist/styles/advancedworkflow.css');
     }
 
     /*
@@ -195,7 +194,7 @@ class AdvancedWorkflowAdmin extends ModelAdmin
         }
 
         $this->extend('updateEditFormAfter', $form);
-        
+
         return $form;
     }
 

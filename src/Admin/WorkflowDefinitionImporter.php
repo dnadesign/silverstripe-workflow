@@ -1,21 +1,17 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Admin;
+namespace DNADesign\Workflow\Admin;
 
 use Exception;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\ORM\ValidationException;
-use Symbiote\AdvancedWorkflow\DataObjects\ImportedWorkflowTemplate;
-use Symbiote\AdvancedWorkflow\Templates\WorkflowTemplate;
+use DNADesign\Workflow\DataObjects\ImportedWorkflowTemplate;
+use DNADesign\Workflow\Templates\WorkflowTemplate;
 use Symfony\Component\Yaml\Yaml;
 
 /**
  * Workflow definition import-specific logic. @see {@link WorkflowDefinitionExporter}.
- *
- * @author  russell@silverstripe.com
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class WorkflowDefinitionImporter
 {

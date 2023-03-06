@@ -1,11 +1,11 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\FormFields;
+namespace DNADesign\Workflow\FormFields;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\RequestHandler;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowTransition;
 
 /**
  * Handles requests for creating or editing transitions.

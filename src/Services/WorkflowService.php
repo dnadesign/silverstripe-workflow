@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Services;
+namespace DNADesign\Workflow\Services;
 
 use Exception;
 use SilverStripe\Core\ClassInfo;
@@ -11,20 +11,16 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Member;
 use SilverStripe\Security\Permission;
 use SilverStripe\Security\PermissionProvider;
-use Symbiote\AdvancedWorkflow\Admin\WorkflowDefinitionImporter;
-use Symbiote\AdvancedWorkflow\Extensions\FileWorkflowApplicable;
-use Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition;
+use DNADesign\Workflow\Admin\WorkflowDefinitionImporter;
+use DNADesign\Workflow\Extensions\FileWorkflowApplicable;
+use DNADesign\Workflow\Extensions\WorkflowApplicable;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowDefinition;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\DataObjects\WorkflowTransition;
 
 /**
  * A central point for interacting with workflows
- *
- * @author  marcus@symbiote.com.au
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 
 class WorkflowService implements PermissionProvider

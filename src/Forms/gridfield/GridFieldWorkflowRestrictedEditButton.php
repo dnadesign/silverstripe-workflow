@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Forms\GridField;
+namespace DNADesign\Workflow\Forms\GridField;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Forms\GridField\AbstractGridFieldComponent;
@@ -9,7 +9,7 @@ use SilverStripe\Forms\GridField\GridFieldEditButton;
 use SilverStripe\Security\Permission;
 use SilverStripe\Security\Security;
 use SilverStripe\View\ArrayData;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
 
 /**
  *

@@ -1,6 +1,9 @@
-# For more information about the properties used in this file,
-# please see the EditorConfig documentation:
-# http://editorconfig.org
+
+# For more information about the properties used in
+# this file, please see the EditorConfig documentation:
+# http://editorconfig.org/
+
+root = true
 
 [*]
 charset = utf-8
@@ -12,6 +15,9 @@ trim_trailing_whitespace = true
 
 [{*.yml,*.scss,*.js,package.json}]
 indent_size = 2
+
+[composer.json]
+indent_size = 4
 
 # The indent size used in the package.json file cannot be changed:
 # https://github.com/npm/npm/pull/3180#issuecomment-16336516

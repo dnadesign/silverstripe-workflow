@@ -1,15 +1,15 @@
 SilverStripe\ORM\DatabaseAdmin:
   classname_value_remapping:
-    ImportedWorkflowTemplate: Symbiote\AdvancedWorkflow\DataObjects\ImportedWorkflowTemplate
-    WorkflowAction: Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction
-    WorkflowActionInstance: Symbiote\AdvancedWorkflow\DataObjects\WorkflowActionInstance
-    WorkflowDefinition: Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition
-    WorkflowInstance: Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance
-    WorkflowTransition: Symbiote\AdvancedWorkflow\DataObjects\WorkflowTransition
-    AssignUsersToWorkflowAction: Symbiote\AdvancedWorkflow\Actions\AssignUsersToWorkflowAction
-    CancelWorkflowAction: Symbiote\AdvancedWorkflow\Actions\CancelWorkflowAction
-    NotifyUsersWorkflowAction: Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction
-    PublishItemWorkflowAction: Symbiote\AdvancedWorkflow\Actions\PublishItemWorkflowAction
-    SetPropertyWorkflowAction: Symbiote\AdvancedWorkflow\Actions\SetPropertyWorkflowAction
-    SimpleApprovalWorkflowAction: Symbiote\AdvancedWorkflow\Actions\SimpleApprovalWorkflowAction
-    UnpublishItemWorkflowAction: Symbiote\AdvancedWorkflow\Actions\UnpublishItemWorkflowAction
+    ImportedWorkflowTemplate: DNADesign\Workflow\DataObjects\ImportedWorkflowTemplate
+    WorkflowAction: DNADesign\Workflow\DataObjects\WorkflowAction
+    WorkflowActionInstance: DNADesign\Workflow\DataObjects\WorkflowActionInstance
+    WorkflowDefinition: DNADesign\Workflow\DataObjects\WorkflowDefinition
+    WorkflowInstance: DNADesign\Workflow\DataObjects\WorkflowInstance
+    WorkflowTransition: DNADesign\Workflow\DataObjects\WorkflowTransition
+    AssignUsersToWorkflowAction: DNADesign\Workflow\Actions\AssignUsersToWorkflowAction
+    CancelWorkflowAction: DNADesign\Workflow\Actions\CancelWorkflowAction
+    NotifyUsersWorkflowAction: DNADesign\Workflow\Actions\NotifyUsersWorkflowAction
+    PublishItemWorkflowAction: DNADesign\Workflow\Actions\PublishItemWorkflowAction
+    SetPropertyWorkflowAction: DNADesign\Workflow\Actions\SetPropertyWorkflowAction
+    SimpleApprovalWorkflowAction: DNADesign\Workflow\Actions\SimpleApprovalWorkflowAction
+    UnpublishItemWorkflowAction: DNADesign\Workflow\Actions\UnpublishItemWorkflowAction

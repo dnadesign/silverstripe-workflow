@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Extensions;
+namespace DNADesign\Workflow\Extensions;
 
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\Form;

@@ -3,7 +3,7 @@ Name: defaultworkflows
 ---
 SilverStripe\Core\Injector\Injector:
   SimpleReviewApprove:
-    class: Symbiote\AdvancedWorkflow\Templates\WorkflowTemplate
+    class: DNADesign\Workflow\Templates\WorkflowTemplate
     constructor:
       - 'Review and Approve'
       - 'Single step review and approve. Make sure to update the Apply for approval and Notify users steps!'
@@ -11,39 +11,39 @@ SilverStripe\Core\Injector\Injector:
     properties:
       structure:
         'Apply for approval':
-          type: Symbiote\AdvancedWorkflow\Actions\AssignUsersToWorkflowAction
+          type: DNADesign\Workflow\Actions\AssignUsersToWorkflowAction
           transitions:
             notify: 'Notify users'
         'Notify users':
-          type: Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction
+          type: DNADesign\Workflow\Actions\NotifyUsersWorkflowAction
           transitions:
             approval: Approval
         Approval:
-          type: Symbiote\AdvancedWorkflow\Actions\SimpleApprovalWorkflowAction
+          type: DNADesign\Workflow\Actions\SimpleApprovalWorkflowAction
           transitions:
             Approve: Publish
             Reject: 'Reject changes'
         Publish:
-          type: Symbiote\AdvancedWorkflow\Actions\PublishItemWorkflowAction
+          type: DNADesign\Workflow\Actions\PublishItemWorkflowAction
           transitions:
             assign: 'Assign Initiator Publish'
         'Assign Initiator Publish':
-          type: Symbiote\AdvancedWorkflow\Actions\AssignUsersToWorkflowAction
+          type: DNADesign\Workflow\Actions\AssignUsersToWorkflowAction
           transitions:
             notify: 'Notify Initiator Publish'
         'Notify Initiator Publish':
-          type: Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction
+          type: DNADesign\Workflow\Actions\NotifyUsersWorkflowAction
         'Reject changes':
-          type: Symbiote\AdvancedWorkflow\Actions\CancelWorkflowAction
+          type: DNADesign\Workflow\Actions\CancelWorkflowAction
           transitions:
             assign: 'Assign Initiator Cancel'
         'Assign Initiator Cancel':
-          type: Symbiote\AdvancedWorkflow\Actions\AssignUsersToWorkflowAction
+          type: DNADesign\Workflow\Actions\AssignUsersToWorkflowAction
           transitions:
             notify: 'Notify Initiator Cancel'
         'Notify Initiator Cancel':
-          type: Symbiote\AdvancedWorkflow\Actions\NotifyUsersWorkflowAction
-  Symbiote\AdvancedWorkflow\Services\WorkflowService:
+          type: DNADesign\Workflow\Actions\NotifyUsersWorkflowAction
+  DNADesign\Workflow\Services\WorkflowService:
     properties:
       templates:
         - '%$SimpleReviewApprove'

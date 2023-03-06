@@ -50,7 +50,7 @@ de:
     PROPERTY: Eigenschaft
   SiteTree:
     WorkflowOptions: Arbeitsablaufoptionen
-  Symbiote\AdvancedWorkflow\Forms\GridField\GridFieldExportAction:
+  DNADesign\Workflow\Forms\GridField\GridFieldExportAction:
     Export: Exportieren
   UnpublishItemWorkflowAction:
     DELAYUNPUBDAYSAFTER: Tage

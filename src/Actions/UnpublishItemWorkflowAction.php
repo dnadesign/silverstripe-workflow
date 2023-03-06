@@ -1,25 +1,20 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Actions;
+namespace DNADesign\Workflow\Actions;
 
 use SilverStripe\Forms\FieldGroup;
 use SilverStripe\Forms\LabelField;
 use SilverStripe\Forms\NumericField;
 use SilverStripe\ORM\DataObject;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
-use Symbiote\AdvancedWorkflow\Extensions\WorkflowEmbargoExpiryExtension;
-use Symbiote\AdvancedWorkflow\Jobs\WorkflowPublishTargetJob;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\Extensions\WorkflowEmbargoExpiryExtension;
+use DNADesign\Workflow\Jobs\WorkflowPublishTargetJob;
 use Symbiote\QueuedJob\Services\AbstractQueuedJob;
 use Symbiote\QueuedJob\Services\QueuedJobService;
 
 /**
  * Unpublishes an item
- *
- * @author     marcus@symbiote.com.au
- * @license    BSD License (http://silverstripe.org/bsd-license/)
- * @package    advancedworkflow
- * @subpackage actions
  */
 class UnpublishItemWorkflowAction extends WorkflowAction
 {
@@ -27,7 +22,7 @@ class UnpublishItemWorkflowAction extends WorkflowAction
         'UnpublishDelay' => 'Int'
     );
 
-    private static $icon = 'symbiote/silverstripe-advancedworkflow:images/unpublish.png';
+    private static $icon = 'dnadesign/silverstripe-workflow:images/unpublish.png';
 
     private static $table_name = 'UnpublishItemWorkflowAction';
 

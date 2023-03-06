@@ -1,16 +1,11 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Actions;
+namespace DNADesign\Workflow\Actions;
 
 use SilverStripe\Forms\TextField;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
+use DNADesign\Workflow\DataObjects\WorkflowAction;
+use DNADesign\Workflow\DataObjects\WorkflowInstance;
 
-/**
- *
- *
- * @author Marcus Nyeholt <marcus@symbiote.com.au>
- */
 class SetPropertyWorkflowAction extends WorkflowAction
 {
     private static $db = array(

@@ -1,6 +1,6 @@
 <?php
 
-namespace Symbiote\AdvancedWorkflow\Forms\GridField;
+namespace DNADesign\Workflow\Forms\GridField;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\Director;
@@ -14,7 +14,7 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Permission;
 use SilverStripe\View\ArrayData;
 use SilverStripe\View\SSViewer;
-use Symbiote\AdvancedWorkflow\Admin\AdvancedWorkflowAdmin;
+use DNADesign\Workflow\Admin\AdvancedWorkflowAdmin;
 
 /**
  * This class is a {@link GridField} component that adds an export action for
