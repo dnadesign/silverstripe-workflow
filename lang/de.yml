@@ -1,0 +1,140 @@
+de:
+  AdvancedWorkflow:
+    ADVANCED_WORKFLOW: 'Fortgeschrittener Arbeitsablauf'
+    APPLY_WORKFLOW: 'Arbeitsablauf anwenden'
+    APPLY_WORKFLOW_HELP: 'Benutzer können Arbeitsabläufe auf Einträge anwenden'
+    CREATE_WORKFLOW: 'Arbeitsablauf erstellen'
+    CREATE_WORKFLOW_HELP: 'Benutzer können Arbeitsablaufdefinitionen erstellen'
+    DELETE_WORKFLOW: 'Arbeitsablauf löschen'
+    JOB_REMINDER_COMMENT: '%s: Erinnerungs-E-Mail gesendet\n\n'
+    REASSIGNACTIVE: 'Aktive Arbeitsabläufe neu zuordnen'
+    VIEWACTIVE: 'Aktive Arbeitsabläufe ansehen'
+    WORKFLOW_REMINDER_JOB: Arbeitsablauferinnerungsauftrag
+  AdvancedWorkflowActionController:
+    ACTION_ERROR: 'Sie müssen angemeldet sein'
+  AdvancedWorkflowAdmin:
+    GridFieldTitleAssignedAll: 'Alle ausstehenden Einträge'
+    GridFieldTitleAssignedYour: 'Ihre ausstehenden Einträge'
+    GridFieldTitleSubmittedAll: 'Alle abgesendeten Einträge'
+    GridFieldTitleSubmittedYour: 'Ihre abgesendeten Einträge'
+    IMPORT: 'Arbeitsablauf importieren'
+    INVALIDIDLIST: 'Eine ungültige Liste mit Kennungen wurde angegeben.'
+    INVALIDPARENTID: 'Eine ungültige übergeordnete Kennung wurde angegeben.'
+    LastEdited: Geändert
+    SORTORDERSAVED: 'Die Sortierreihenfolge wurde gespeichert.'
+    Title: Titel
+    WorkflowStatus: 'Aktuelle Aktion'
+    WorkflowTitle: 'Effektiver Arbeitsablauf'
+  AdvancedWorkflowPublishJob:
+    SCHEDULEJOBTITLE: '{type} von {object} geplant'
+  AllowEditing:
+    ContentSettings: Inhaltseinstellungen
+    NoString: Nein
+  AssignUsersToWorkflowAction:
+    ASSIGNUSERS: 'Benutzer zuordnen'
+    GROUPS: Gruppen
+    USERS: Benutzer
+  FrontEndWorkflowController:
+    FRONTENDACTION_CONTEXT_EXCEPTION: 'Inhaltsobjekt nicht gefunden'
+    FRONTENDACTION_TRANSITION_EXCEPTION: 'Sie heben keine Berechtigung, um diese Aktion auszuführen'
+  NotifyUsersWorkflowAction:
+    EMAILFROM: 'E-Mail von'
+    EMAILSUBJECT: E-Mail-Betreff
+    EMAILTEMPLATE: E-Mail-Vorlage
+    FIELDNAME: Feldname
+    FORMATTINGHELP: Formatierungshilfe
+    NOTIFICATIONEMAIL: Benachrichtigungs-E-Mail
+  PublishItemWorkflowAction:
+    PUBLICATIONDELAY: Veröffentlichungsverzögerung
+  SetPropertyWorkflowAction:
+    PROPERTY: Eigenschaft
+  SiteTree:
+    WorkflowOptions: Arbeitsablaufoptionen
+  Symbiote\AdvancedWorkflow\Forms\GridField\GridFieldExportAction:
+    Export: Exportieren
+  UnpublishItemWorkflowAction:
+    DELAYUNPUBDAYSAFTER: Tage
+  Workflow:
+    WorkflowActionsTabTitle: Arbeitsablaufaktionen
+  WorkflowAction:
+    ALLOW_COMMENTING: 'Kommentieren erlauben?'
+    Author: Autor
+    CLASS_LABEL: Aktionsklasse
+    COMMENT: Kommentar
+    CommentLabel: Kommentar
+    ExecutedLabel: Ausgeführt
+    FRONTENDCOMMENT: Kommentar
+    FinishedLabel: Abgeschlossen
+    TITLE: Titel
+    Transitions: Übergänge
+    TypeLabel: Typ
+  WorkflowActionInstance:
+    Title: Titel
+  WorkflowApplicable:
+    ADDITIONAL_WORKFLOW_DEFINITIONS: 'Zusätzliche Arbeitsabläufe'
+    DEFINITION: 'Angewandter Arbeitsablauf'
+    EFFECTIVE_WORKFLOW: 'Effektiver Arbeitsablauf'
+    WORKFLOWLOG: Arbeitsablaufprotokoll
+  WorkflowDefinition:
+    CHOOSE_TEMPLATE: 'Vorlage auswählen (optional)'
+    DESCRIPTION: Beschreibung
+    GROUPS: 'Auf Gruppen beschränken'
+    INITIAL_ACTION_BUTTON_TEXT: 'Initialer Aktionsschaltflächentext'
+    LATEST_VERSION: 'Aktuelle Version ist %s'
+    REMINDEREMAIL: Erinnerungs-E-Mail
+    TEMPLATE_INFO: Vorlageninformation
+    TEMPLATE_NAME: Quellvorlage
+    TEMPLATE_VERSION: Vorlagenversion
+    TITLE: Titel
+    UPDATE_FROM_TEMLPATE: 'Auf neueste Vorlagenversion aktualisieren (%s)'
+    USERS: 'Auf Benutzer beschränken'
+    WORKFLOW: Arbeitsablauf
+    WORKFLOWACTIVEIINSTANCES: 'Aktive Arbeitsablaufinstanzen'
+    WORKFLOWCOMPLETEDIINSTANCES: 'Abgeschlossene Arbeitsablaufinstanzen'
+  WorkflowDefinitionImporter:
+    INVALID_YML_FORMAT_NO_HEADER: 'Ungültiges YAML-Format.'
+    INVALID_YML_FORMAT_NO_PARSE: 'Ungültiges YAML-Format. Kann nicht eingelesen werden.'
+  WorkflowEmbargoExpiryExtension:
+    ActiveWorkflowStateTitle: Aktiv
+    CompletedWorkflowStateTitle: Fertiggestellt
+    PUBLISH_ON: 'Geplantes Veröffentlichungsdatum'
+    REQUESTED_PUBLISH_DATE: 'Gewünschtes Veröffentlichungsdatum'
+    REQUESTED_PUBLISH_DATE_H3: 'Ablauf und Embargo'
+    TabTitle: Veröffentlichungsplan
+  WorkflowField:
+    AddTransitionAction: 'Übergang hinzufügen'
+    CreateAction: 'Aktion erstellen'
+    CreateLabel: Erstellen
+    DeleteAction: Löschen
+    EditAction: Bearbeiten
+  WorkflowInstance:
+    ActionLogTitle: Protokollieren
+    REASSIGN_HEADER: 'Arbeitsablauf neu zuordnen'
+    TITLE_FOR_DO: '%s - %s'
+    TITLE_STUB: 'Instanz #%s von %s'
+    TargetClassLabel: Zielklasse
+    TargetIDLabel: Ziel
+    TitleLabel: Titel
+    WORKFLOW_TRANSITION_EXCEPTION: 'Ungültiger Übergangszustand für Aktion #%s'
+    WorkflowStatusLabel: Arbeitsablaufstatus
+  WorkflowList:
+    TableHeaderActions: Aktionen
+    TableHeaderEditedBy: 'Bearbeitet von'
+    TableHeaderItem: Eintrag
+    TableHeaderSubmitted: Abgesendet
+  WorkflowReminderEmail:
+    Action: 'Klicken Sie hier, um diesem Arbeitsablauf nachzukommen'
+  WorkflowReminderTask:
+    SAVE: Speichern
+  WorkflowService:
+    EXISTING_WORKFLOW_ERROR: 'Das Objekt verfügt bereits über einen laufenden Arbeitsablauf'
+  WorkflowTemplate:
+    INVALID_TEMPLATE_ACTION: 'Ungültige Aktionsklasse in Vorlage angegeben'
+  WorkflowTransition:
+    ACTION: Aktion
+    Active: Aktiv
+    NEXT_ACTION: 'Nächste Aktion'
+    Passive: Passiv
+    SELECTONE: '(Eines auswählen)'
+    TYPE: Typ
+    TabTitle: 'Auf Benutzer beschränken'
