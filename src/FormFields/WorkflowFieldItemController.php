@@ -11,8 +11,6 @@ use SilverStripe\Security\SecurityToken;
 
 /**
  * Handles individual record data editing or deleting.
- *
- * @package silverstripe-advancedworkflow
  */
 class WorkflowFieldItemController extends Controller
 {

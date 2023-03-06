@@ -9,8 +9,6 @@ use DNADesign\Workflow\DataObjects\WorkflowAction;
 
 /**
  * Handles requests for creating or editing actions.
- *
- * @package silverstripe-advancedworkflow
  */
 class WorkflowFieldActionController extends RequestHandler
 {

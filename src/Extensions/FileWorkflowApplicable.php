@@ -10,10 +10,6 @@ use SilverStripe\Forms\Form;
  * UI structure so need to be handled a little differently. Additionally, it doesn't really
  * work without custom code to handle the triggering of workflow, and in general is not
  * ready for production use just yet.
- *
- * @author  marcus@symbiote.com.au
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class FileWorkflowApplicable extends WorkflowApplicable
 {

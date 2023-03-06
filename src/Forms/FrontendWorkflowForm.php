@@ -3,10 +3,8 @@
 namespace DNADesign\Workflow\Forms;
 
 use SilverStripe\Forms\Form;
-use FormResponse;
 use SilverStripe\Control\Director;
 use SilverStripe\Control\HTTPResponse;
-use SilverStripe\Core\Convert;
 
 class FrontendWorkflowForm extends Form
 {

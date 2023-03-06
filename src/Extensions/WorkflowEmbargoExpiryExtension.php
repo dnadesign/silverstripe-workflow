@@ -4,17 +4,13 @@ namespace DNADesign\Workflow\Extensions;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Core\Injector\Injector;
-use SilverStripe\Core\Manifest\ModuleLoader;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\DatetimeField;
 use SilverStripe\Forms\HeaderField;
 use SilverStripe\Forms\LiteralField;
-use SilverStripe\ORM\ArrayList;
 use SilverStripe\ORM\DataExtension;
-use SilverStripe\ORM\DataQuery;
 use SilverStripe\ORM\FieldType\DBDatetime;
 use SilverStripe\ORM\FieldType\DBHTMLText;
-use SilverStripe\ORM\Queries\SQLSelect;
 use SilverStripe\Security\Member;
 use SilverStripe\Security\Permission;
 use SilverStripe\View\Requirements;
@@ -32,9 +28,6 @@ if (!class_exists(QueuedJobDescriptor::class)) {
 
 /**
  * Adds embargo period and expiry dates to content items
- *
- * @author marcus@symbiote.com.au
- * @license BSD License http://silverstripe.org/bsd-license/
  */
 class WorkflowEmbargoExpiryExtension extends DataExtension
 {

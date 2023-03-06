@@ -11,10 +11,6 @@ use SilverStripe\Security\Security;
 use SilverStripe\View\ArrayData;
 use DNADesign\Workflow\DataObjects\WorkflowInstance;
 
-/**
- *
- * @package advancedworkflow
- */
 class GridFieldWorkflowRestrictedEditButton extends AbstractGridFieldComponent implements GridField_ColumnProvider
 {
     /**

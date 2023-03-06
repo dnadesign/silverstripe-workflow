@@ -8,9 +8,6 @@ use SilverStripe\Forms\RequiredFields;
  * Extends RequiredFields so we can prevent DO writes in AW's controller(s) without needing to catch Exceptions
  * from DO->validate() all over the place.
  * Note specifically $this->getExtendedValidationRoutines() - anti-pattern anyone?
- *
- * @author Russell Michell russell@silverstripe.com
- * @package advancedworkflow
  */
 class AWRequiredFields extends RequiredFields
 {

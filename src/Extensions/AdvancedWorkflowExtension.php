@@ -5,11 +5,9 @@ namespace DNADesign\Workflow\Extensions;
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Core\Extension;
-use SilverStripe\Core\Manifest\ModuleLoader;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\GridField\GridFieldDetailForm_ItemRequest;
 use SilverStripe\ORM\DataObject;
-use SilverStripe\Security\Permission;
 use SilverStripe\View\Requirements;
 use DNADesign\Workflow\Extensions\WorkflowApplicable;
 use DNADesign\Workflow\Services\WorkflowService;
@@ -17,10 +15,6 @@ use DNADesign\Workflow\Services\WorkflowService;
 /**
  * Handles interactions triggered by users in the backend of the CMS. Replicate this
  * type of functionality wherever you need UI interaction with workflow.
- *
- * @author  marcus@symbiote.com.au
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class AdvancedWorkflowExtension extends Extension
 {

@@ -12,8 +12,6 @@ if (!class_exists(AbstractQueuedJob::class)) {
 
 /**
  * A queued job that publishes a target after a delay.
- *
- * @package advancedworkflow
  */
 class WorkflowPublishTargetJob extends AbstractQueuedJob
 {

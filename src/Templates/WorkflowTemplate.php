@@ -64,9 +64,6 @@ use DNADesign\Workflow\DataObjects\WorkflowTransition;
  * the system when changing things around
  *
  * 1. Update the 'version' number
- *
- * @author marcus@symbiote.com.au
- * @license BSD License http://silverstripe.org/bsd-license/
  */
 class WorkflowTemplate
 {

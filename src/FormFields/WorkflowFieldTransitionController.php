@@ -9,8 +9,6 @@ use DNADesign\Workflow\DataObjects\WorkflowTransition;
 
 /**
  * Handles requests for creating or editing transitions.
- *
- * @package silverstripe-advancedworkflow
  */
 class WorkflowFieldTransitionController extends RequestHandler
 {

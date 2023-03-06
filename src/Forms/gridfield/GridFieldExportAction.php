@@ -19,9 +19,6 @@ use DNADesign\Workflow\Admin\AdvancedWorkflowAdmin;
 /**
  * This class is a {@link GridField} component that adds an export action for
  * WorkflowDefinition objects shown in GridFields.
- *
- * @license BSD License (http://silverstripe.org/bsd-license/)
- * @package advancedworkflow
  */
 class GridFieldExportAction extends AbstractGridFieldComponent implements
     GridField_ColumnProvider,

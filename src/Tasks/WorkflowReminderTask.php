@@ -6,14 +6,11 @@ use SilverStripe\Dev\BuildTask;
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Control\Email\Email;
 use SilverStripe\ORM\FieldType\DBDatetime;
-use DNADesign\Workflow\DataObjects\WorkflowDefinition;
 use DNADesign\Workflow\DataObjects\WorkflowInstance;
 
 /**
  * A task that sends a reminder email to users assigned to a workflow that has
  * not been actioned for n days.
- *
- * @package advancedworkflow
  */
 class WorkflowReminderTask extends BuildTask
 {

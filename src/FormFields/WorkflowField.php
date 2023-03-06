@@ -5,7 +5,6 @@ namespace DNADesign\Workflow\FormFields;
 use ReflectionClass;
 use SilverStripe\Control\HTTPResponse;
 use SilverStripe\Core\ClassInfo;
-use SilverStripe\Core\Manifest\ModuleLoader;
 use SilverStripe\Forms\FormField;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\Security\SecurityToken;
@@ -14,7 +13,6 @@ use SilverStripe\View\Requirements;
 use DNADesign\Workflow\DataObjects\WorkflowDefinition;
 use DNADesign\Workflow\DataObjects\WorkflowAction;
 use DNADesign\Workflow\DataObjects\WorkflowTransition;
-use DNADesign\Workflow\FormFields\WorkflowField;
 use DNADesign\Workflow\Services\WorkflowService;
 
 /**
